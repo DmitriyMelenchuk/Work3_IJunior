@@ -52,7 +52,8 @@ public class WaypointMovement : MonoBehaviour
                 _currentPoint = (int)Mathf.Repeat(_currentPoint + 1, _points.Length);
             }
 
-            transform.position += (_points[_currentPoint].position - transform.position).normalized * (_speed * Time.deltaTime);
+            transform.position += (_points[_currentPoint].position - transform.position).normalized 
+                * (_speed * Time.deltaTime);
 
             yield return null;
         }

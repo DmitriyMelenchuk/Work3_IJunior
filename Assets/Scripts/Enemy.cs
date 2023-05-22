@@ -1,9 +1,9 @@
 using UnityEngine;
 
+[RequireComponent(typeof(WaypointMovement))]
 public class Enemy : MonoBehaviour
 {
-    [SerializeField] private WaypointMovement _waypointMovement;
-
+    private WaypointMovement _waypointMovement;
     private Animator _animator;
     private bool _faceRight;
 
