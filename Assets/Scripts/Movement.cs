@@ -1,5 +1,6 @@
 using UnityEngine;
 
+[RequireComponent(typeof(Rigidbody2D), typeof(Animator))]
 public class Movement : MonoBehaviour
 {
     [SerializeField] private LayerMask _layerMask;

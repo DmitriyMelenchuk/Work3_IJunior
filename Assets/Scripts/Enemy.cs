@@ -1,6 +1,6 @@
 using UnityEngine;
 
-[RequireComponent(typeof(WaypointMovement))]
+[RequireComponent(typeof(WaypointMovement), typeof(Animator))]
 public class Enemy : MonoBehaviour
 {
     private WaypointMovement _waypointMovement;
